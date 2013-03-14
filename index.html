@@ -81,11 +81,7 @@
       <div class="topbar">
         <div class="topbar-inner">
           <div class="container-fluid">
-            <a class="brand" href="#">WebAPP</a>
-            <ul class="nav">
-              <li><a href="#">Hello</a></li>
-              <li><a href="#">World</a></li>
-            </ul>
+            <a class="brand" href="#">BurnIt!</a> 
           </div>
         </div>
       </div>
@@ -94,28 +90,23 @@
       <div class="scrollable panel">
         <div class="content insideScrollablePanel">
           <ul class="tabs" data-tabs="tabs">
-            <li class="active"><a href="#home">Home</a></li>
-            <li class=""><a href="#message">Message</a></li>
+            <li class="active"><a href="#charts">Charts</a></li>
+            <li class=""><a href="#data">Data</a></li>
           </ul>
 
           <div id="my-tab-content" class="tab-content">
 
-            <div class="tab-pane active" id="home">
+            <div class="tab-pane active" id="charts">
               <div class="hero-unit">
-                <h1>Hello, world!</h1>
-                <p>
-                Vestibulum id ligula porta felis euismod semper.
-                Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                eget lacinia odio sem nec elit.
-                </p>
+                <h1>Your health chart</h1>
+                <div id="visualization" style="width: 500px; height: 400px;"></div>
                 <p>
                 <a class="btn primary large">Learn more »</a>
                 </p>
               </div>
             </div>
 
-            <div class="tab-pane" id="message">
+            <div class="tab-pane" id="data">
               <div class="span5">
                 <h2>Heading</h2>
                 <p>
@@ -146,7 +137,7 @@
 
           </div>
           <footer>
-          <p>I'm the footer</p>
+          <p>copyright kitofr@gmail.com since 2013</p>
           </footer>
         </div>
       </div>
@@ -159,5 +150,17 @@
       e.target;         // activated tab
       e.relatedTarget;  // previous tab
     });
-  </script>
-</html>
+
+    var data = {
+      weight: { 
+        { date: '2013-01-01', fat: 15, water: 25, muscle: 20, weight: 84 },
+        { date: '2013-01-02', fat: 14, water: 23, muscle: 21, weight: 83 },
+        { date: '2013-01-03', fat: 13, water: 25, muscle: 21, weight: 84 },
+        { date: '2013-01-04', fat: 12, water: 23, muscle: 20, weight: 83 },
+        { date: '2013-01-05', fat: 11, water: 22, muscle: 22, weight: 84 },
+        { date: '2013-01-06', fat: 12, water: 25, muscle: 21, weight: 82 },
+        { date: '2013-01-07', fat: 11, water: 24, muscle: 20, weight: 81 }
+      }; 
+
+    </script>
+  </html>
